@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Welcome to the Tri-Co class scheduling services</title>
+    <link rel="stylesheet"  href="../css/style.css">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+  </head>
+  <!--<body>
+    <h1>Welcome! Please select your school: </h1>
+    
+    <div class = "container">
+       
+        <button onclick="location.href = 'http://localhost:5000/go?college=brynmawr';" class = "myButton">Bryn Mawr</button>
+    </div>
+  </body>-->
+  <body>
+   
+   <!--<div class="imgDiv" ></div>-->
+   <div class="try"><ul>
+    <li class="active">1</li>
+    <li >2</li>
+    <li>3</li>
+  
+  </ul></div>
+    <div class="container">
+      <h1>Find a class schedule for Fall 2021 </h1>
+    <form action="http://localhost:5000/chooseSchoolAndNumClasses" method="POST">
+      
+    <!--School <select name="school" id="cardtypeid">
+      <option value="brynmawr">Bryn Mawr</option>
+      <option value="haverford">Haverford</option>
+      <option value="swathmore">Swathmore</option></select><br/>-->
+      
+      
+   
+      <h2>Pick your school</h2>
+     
+      <div class ="myOptions">
+     Bryn Mawr <input type = "radio" name="school" value="brynmawr" checked>
+     
+    </div>
+     <h2>Pick the number of classes you would like to take</h2>
+     <div class ="myOptions">
+      3 <input type = "radio" name="classes" value="3" checked>
+     4 <input type = "radio" name="classes" value="4">
+     <!--5 <input type = "radio" name="classes" value="5">-->
+    </div>
+    
+ <!--
+    Number of classes <select name="classes" id="cardtypeid">
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+     
+    </select><br/>
+    -->
+    <button type="submit" class="myButton">Submit</button>
+  
+  </form>
+
+    
+  </div>
+  
+  </body>
+</html>
